@@ -8,16 +8,16 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 //rutas
 const router = express.Router();
-const authRoutes = require('../routes/auth');
-const tutorialsRoutes = require('../routes/tutorials');
-const buyRoutes = require('../routes/buy');
-const mapRoutes = require('../routes/map');
-const homeRoutes = require('../routes/home');
-const addRoutes = require('../routes/add');
+const authRoutes = require('./routes/auth');
+const tutorialsRoutes = require('./routes/tutorials');
+const buyRoutes = require('./routes/buy');
+const mapRoutes = require('./routes/map');
+const homeRoutes = require('./routes/home');
+const addRoutes = require('./routes/add');
 
 //esquemas de mongo
-const User = require('../models/user');
-const Robot = require('../models/robots');
+const User = require('./models/user');
+const Robot = require('./models/robots');
 
 const port = 3000;
 require('dotenv').config();
